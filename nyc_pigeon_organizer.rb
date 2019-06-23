@@ -30,10 +30,12 @@ def nyc_pigeon_organizer(data)
   data[:lives].each do |local, name|
     name.each do |brdName|
       feature.each do |i|
+        if brdName == i
         final[i][:lives] << local
       end
     end
   end
+end
 
   return final
 end
