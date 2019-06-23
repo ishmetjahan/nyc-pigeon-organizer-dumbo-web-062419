@@ -3,10 +3,9 @@ def nyc_pigeon_organizer(data)
   data.each do |info, value|
     value.each do |atribt,arr|
       arr.each do |name|
-        final[name]= 
-      
+        final[name]= {:color => [], :gender => [], :lives => []}
       end
     end
   end
-  newHas
+  return final
 end
