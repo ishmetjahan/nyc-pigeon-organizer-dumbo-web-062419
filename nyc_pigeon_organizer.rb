@@ -18,6 +18,22 @@ def nyc_pigeon_organizer(data)
     end
   end
   
-  
+  data[:gender].each do |gender, type|
+    type.each do |brdName|
+      feature.each do |i|
+        if brdName == i 
+          final[i][:gender] << gender.to_s 
+        end
+      end
+    end
+  end
+  data[:lives].each do |local, name|
+    name.each do |brdName|
+      feature.each do |i|
+        final[i][:lives] << local
+      end
+    end
+  end
+end 
   return final
 end
