@@ -16,7 +16,7 @@ def nyc_pigeon_organizer(data)
         end
       end
     end
-  end
+  
   
   data[:gender].each do |gender, type|
     type.each do |brdName|
@@ -26,7 +26,7 @@ def nyc_pigeon_organizer(data)
         end
       end
     end
-  end
+  
   data[:lives].each do |local, name|
     name.each do |brdName|
       feature.each do |i|
@@ -34,6 +34,6 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-end 
+
   return final
 end
